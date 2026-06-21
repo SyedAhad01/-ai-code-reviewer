@@ -2,10 +2,11 @@
   "name": "code-review",
   "version": "1.0.0",
   "description": "",
-  "main": "server.js",
+  "main": "Backend/server.js",
   "scripts": {
-    "start": "node server.js",
-    "dev": "nodemon server.js",
+    "start": "node Backend/server.js",
+    "build": "npm install && npm install --prefix Frontend && npm run build --prefix Frontend",
+    "dev": "nodemon Backend/server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
